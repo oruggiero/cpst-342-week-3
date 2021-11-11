@@ -1,0 +1,71 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-weight: 400, 700
+*/
+
+/* stories */
+.stories {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+}
+
+/* Story */
+
+.story {
+  background-color: #c4c4c4;
+  padding: 20px;
+  max-width: 290px;
+}
+
+.story:nth-child(even) {
+  background-color: #f29090;
+}
+
+.story-cover {
+  max-width: 100%;
+}
+
+.story-title {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.story p {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12;
+}
+
+/* @media adds a rule about the "media" - think screen or device - content is rendering on */
+
+/* tablet and up */
+@media (min-width: 768px) {
+  .stories {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+/* desktop and up */
+@media (min-width: 1440px) {
+  .stories {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .story {
+    max-width: 350px;
+  }
+
+  .story:nth-child(even) {
+    background-color: #90c3f2;
+  }
+}
