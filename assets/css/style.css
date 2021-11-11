@@ -45,7 +45,7 @@ font-weight: 400, 700
 /* tablet and up */
 @media (min-width: 768px) {
   .stories {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
     max-width: 768px;
     margin: 0 auto;
@@ -55,7 +55,7 @@ font-weight: 400, 700
 /* desktop and up */
 @media (min-width: 1440px) {
   .stories {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 25px;
     max-width: 1100px;
     margin: 0 auto;
